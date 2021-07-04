@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>DEPARTMENT OF CIVIL AVIATION | GOVERNMENT OF PUNJAB </title>
+    
+    
+
+
+
+
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+  <!-- header1  -->
+<nav>
+  <div style="flex-direction:row;display:flex;line-height:30px;">
+  <img src="images/1.png" style="width:60px; height:60px; padding-left:1rem; padding-right:1rem; margin-left:1rem; margin-top:1rem; margin-bottom:1rem;border-radius:50%"> 
+<div style="display:flex; flex-direction:column">
+  <span style="padding-left:1rem; padding-right:1rem; margin-left:1rem; margin-right:1rem;margin-top:1rem;">GOVERNMENT Of PUNJAB </span>
+  <span style="padding-left:1rem; padding-right:1rem; margin-left:1rem; margin-right:1rem;margin-bottom:1rem">DEPARTMENT OF CIVIL AVIATION</span>
+</div>
+</div>
+</nav>
+  <!--  Introductory Header    -->
+    <div class="logo_header">
+      <img src=""> 
+    </div>
+  <!--   Header Navigation   -->
+  <nav class="navbar_id">
+    <div id="logo">Your Logo here</div>
+
+    <label for="drop" class="toggle">Menu</label>
+    <input type="checkbox" id="drop" />
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li>
+                <!-- First Tier Drop Down -->
+                <label for="drop-1" class="toggle">About +</label>
+                <a href="#">About</a>
+                <input type="checkbox" id="drop-1"/>
+                <ul>
+                    <li><a href="../includes/background.html">Background</a></li>
+                    <li><a href="../includes/vision.html">Vision</a></li>
+                    <li><a href="../includes/mission.html">Mission</a></li>
+                    <li><a href="../includes/goal.html">Goals</a></li>
+                </ul> 
+
+            </li>
+            <li>
+
+            <!-- First Tier Drop Down -->
+            <label for="drop-2" class="toggle">Organizations +</label>
+            <a href="#">Organizations</a>
+            <input type="checkbox" id="drop-2"/>
+            <ul>
+                <li><a href="#">Directorate of Civil Aviation</a></li>
+                <li><a href="#">Punjab State Civil Aviation Council</a></li>
+            </ul>
+            </li>
+            <li>
+
+              <!-- First Tier Drop Down -->
+              <label for="drop-1" class="toggle">Policies & Programmes +</label>
+              <a href="#">Policies & Programmes</a>
+              <input type="checkbox" id="drop-1"/>
+              <ul>
+                  <li><a href="#">Policies</a></li>
+                  <li><a href="#">Programmes</a></li>
+              </ul>
+              </li>
+            <li><a href="#">Contact Us</a></li>
+            
+            <li><a href="#">RTI Manuals</a></li>
+        </ul>
+    </nav>
+    <!--Slider-->
+    <div class="slideshow-container" id="one">
+
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="images/download.jpeg" style="width:100%">
+        <div class="text">Caption Text</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="images/download.jpeg" style="width:100%">
+        <div class="text">Caption Two</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="images/download.jpeg" style="width:100%">
+        <div class="text">Caption Three</div>
+      </div>
+    
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+ 
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+   <main class="main">
+    <div class="card-container">
+      <div class="city">
+        <a href="#">
+          <div class="description" style="font-family: 'Poppins';">
+            <h2>Department Of Civil Aviation</h2>
+            <p style="padding-right:1rem;">Welcome To Civil Aviation Website</p>
+          </div>
+        </a>
+      </div>
+      <div class="city">
+       
+          <div class="description">
+            <h2 style=" border-bottom: 1px;
+            border-color:  #fff;
+            line-height:28px; font-family: 'Poppins';">Important Links</h2>
+            <ol>
+              <li>
+                <a href="https://www.civilaviation.gov.in/">Ministry Of Civil Aviation, Gol</a>
+              </li>
+              
+              <hr>
+              <li>
+                <a href="https://www.aai.aero/">Airports Authority of India</a>
+              </li>
+              <hr>
+              <li>
+                <a href="https://www.dgca.gov.in/digigov-portal/">Director General Of Civil Aviation, Govt Of India</a>
+              </li>
+            </ol>
+          </div>
+          
+        </div>
+ 
+      </div>
+  </main>
+  <footer class="site-footer">
+    <div class="containing">
+      <div style="display:flex;flex-wrap:wrap;margin-right:-15px;margin-left:-15px">
+
+        <div class="col-sm-12 col-md-4">
+          <h6>About</h6>
+          <h6 style="font-size: 12px;"><i>Directorate of Civil Aviation</i></h6>
+          <ul class="footer-links">
+            <li><i class="fas fa-phone"></i>0172-2707608</li>
+            <li><i class="fas fa-phone"></i>0172-2703942</li>
+            
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <h6>Email</h6>
+          <ul class="footer-links">
+            <li><i class="fab fa-envelope"></i>dir.ca@punjab.gov.in</li>
+            <li><i class="fab fa-envelope"></i>dcapunjab@gmail.com</li>
+            
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-4">
+          <h6>Address</h6>
+          <ul class="footer-links">
+            <li>Room No: 13-15</li>
+            <li>17,Boys Buildings</li>
+            <li>Sector-17D, Chandigarh</li>
+            <li>Pin-160017</li>
+            
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+</footer>
+</body>
+</html>
