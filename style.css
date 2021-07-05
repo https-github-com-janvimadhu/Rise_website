@@ -51,3 +51,12 @@
   text-align: center;
   color: white;
 }
+
+.heelo{
+  
+  width: 35px;
+  height: 5px;
+  background-color: rgb(241, 232, 232);
+  margin: 6px 0;
+  border-radius: 20%;
+}
